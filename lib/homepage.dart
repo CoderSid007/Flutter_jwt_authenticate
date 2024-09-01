@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:jwt_authentication_test/auth_service.dart';
 
 class Homepage extends StatelessWidget {
   const Homepage({super.key});
@@ -9,8 +10,10 @@ class Homepage extends StatelessWidget {
       title: Text('Home Page'),
       foregroundColor: Colors.blue,
     );
-    return Container(
-      color: Colors.white,
+    return Scaffold(
+      body: Center(
+        child: ElevatedButton(onPressed: () {}, child: Text('Tap me')),
+      ),
     );
   }
 }

@@ -1,5 +1,6 @@
 import 'dart:convert';
 import 'package:http/http.dart' as http;
+import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 
 class AuthService {
   final String baseUrl =
@@ -43,4 +44,5 @@ class AuthService {
       throw Exception('Failed to sign up');
     }
   }
+  //
 }
